@@ -40,13 +40,11 @@ public class StudentGroup {
     }
 
     public void markTaskAsCompleted(Student student, String task) {
-        // find the index of the task and remove it
         int index = tasks.indexOf(task);
         if (index != -1) {
             tasks.remove(index);
         }
 
-        // add the task to the student's completed tasks list
         student.addCompletedTask(task);
     }
 }
